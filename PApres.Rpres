@@ -1,0 +1,90 @@
+DDP PA - Shiny Application to process "airquality" dataset
+========================================================
+author: Maruthi Kaza
+date: 12/10/2019
+autosize: true
+
+<style>
+
+.reveal h3 { 
+  font-size: 60px;
+  color: blue;
+}
+
+.reveal section p {
+    font-size: 50px;
+}
+
+.reveal section pre code {
+    font-size: 20px;
+}
+
+.reveal ul, 
+.reveal ol {
+    font-size: 30px;
+    color: black;
+    list-style-type: square;
+}
+
+.slideCol .reveal .state-background {
+background: lightcyan;
+border-color:black;
+}
+
+</style>
+
+
+"airquality" - dataset characteristics
+========================================================
+type: slideCol
+
+```{r, echo=TRUE}
+str(airquality)
+```
+
+```{r, echo=TRUE}
+head(airquality)
+```
+
+
+Key Controls Utilized
+========================================================
+type: slideCol
+
+Input Controls:
+- Calendar controls                 
+- Action button                     
+- Group Checkbox control            
+- Slider bar control
+- Radiobutton controls
+- Tab structure
+
+***
+
+Output Controls:
+- renderText                        
+- renderPrint                       
+- renderTable
+- renderPlot
+
+
+Shiny Application Home Page
+========================================================
+type: slideCol
+![ShinyApp](ShinyApp.png)
+***
+<small>Usage Guidelines:
+- Select Date Range and Click on button to Retrieve Data
+- Choose Variables to display using Checkboxes
+- Tune number of rows to display using the Slidebar 
+- Navigate to "Plot" tab and select the variables to plot using radiobuttons
+- Summary tab provides "airquality" data summary
+- Documentation is provided in the "Documentation" tab
+</small>
+
+Links
+========================================================
+type: slideCol
+[Source Code in GitHub](https://github.com/kvmkaza/DDPPA_ShinyApp)
+
+[Shiny Application](https://kvmkaza.shinyapps.io/DDP_PA_Shiny_App/)
